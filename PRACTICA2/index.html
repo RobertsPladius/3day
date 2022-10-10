@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOLZTEAM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="H:\PRACTICA2\css\index.css">
+</head>
+<body>
+<header>
+<div class="otstup">
+<div class="logo-headar">
+<img href="#" src="https://pngimg.com/uploads/lada/lada_PNG109.png"   id="logo-headar" >
+ </div>
+<div class="logo-text">
+ <p style="margin-right: 1vw;">LADA</p>
+ </div>
+<div class="menu">
+	<a href="#" class="ssilka-header">Домой</a>
+</div>
+<div class="menu">
+	<a href="#" class="ssilka-header">Контакты</a>
+</div>
+<div class="menu">
+	<a href="#" class="ssilka-header">  </a>
+</div>
+</div>
+</header>
+<br>
+
+<div>
+	<br>
+</div>
+
+<div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://static.lada.ru/images/v6/promo/LADA__Selection.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://static.lada.ru/images_new/cars/about/granta/g_sed_top.jpg" style="width:100%" style="height: 110%" >
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://static.lada.ru/images/v6/service/benefit/servise-benefit_desktop.jpg" style="width:100%">
+  </div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
+</div>
+<script>
+	//Карусель
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}  // управление смены картинок при помощии кружков снизу карусели  
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // скорость смены изображения сейчас оно равно=3.5сек
+}
+</script>
+</body>
+</html>
