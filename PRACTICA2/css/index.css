@@ -418,3 +418,12 @@ footer{
  border: 2px solid grey;
 }
 
+.class1{
+  position: absolute;
+  z-index: 5;
+}
+.formaregst{
+  padding-left: 45%;
+ 
+}
+
