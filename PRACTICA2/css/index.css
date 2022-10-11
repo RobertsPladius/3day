@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	font-size: 2vh;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .header{
@@ -405,5 +405,16 @@ footer{
 .te{
 	display: flex;
 	justify-content:center;
+}
+
+.textis{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vh;
+ border: 2px solid grey;
 }
 
